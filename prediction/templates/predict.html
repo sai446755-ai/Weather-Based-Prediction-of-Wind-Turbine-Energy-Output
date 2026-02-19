@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wind Prediction</title>
+    <style>
+        body{
+            background-color:#e3c89b;
+            font-family:Georgia;
+        }
+        .header{
+            background:#6b4b3e;
+            color:white;
+            padding:20px;
+            text-align:center;
+            font-size:28px;
+        }
+        .container{
+            display:flex;
+            justify-content:space-around;
+            margin-top:40px;
+        }
+        .box{
+            width:40%;
+        }
+        button{
+            background:#6b4b3e;
+            color:white;
+            padding:8px 15px;
+            border:none;
+            cursor:pointer;
+        }
+        input, select{
+            padding:8px;
+            width:80%;
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    Wind Turbine Energy Prediction Based on Weather Conditions
+</div>
+
+<div class="container">
+
+    <!-- Weather Section -->
+    <div class="box">
+        <form method="POST" action="/windapi">
+            <label>Select City</label><br>
+            <select name="city">
+                <option>Agartala</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Hyderabad</option>
+            </select><br>
+            <button type="submit">CHECK THE WEATHER CONDITIONS</button>
+        </form>
+
+        <br>
+
+        {% if weather %}
+        <h3>The weather conditions of the city are</h3>
+        <p>Temperature : {{ weather.temperature }} °C</p>
+        <p>Humidity : {{ weather.humidity }} %</p>
+        <p>Pressure : {{ weather.pressure }} hPa</p>
+        <p>Wind Speed : {{ weather.wind_speed }} m/s</p>
+        {% endif %}
+        {% if error %}
+<p style="color:red;">Error: {{ error }}</p>
+{% endif %}
+
+    </div>
+
+
+    <!-- Prediction Section -->
+    <div class="box">
+        <h2>Predict the Wind Energy!!</h2>
+
+        <form method="POST" action="/predict">
+            <input type="text" name="theoretical_power" placeholder="Theoretical Power in KWh" required><br>
+            <input type="text" name="wind_speed" placeholder="Wind Speed in m/s" required><br>
+            <button type="submit">PREDICT</button>
+        </form>
+
+        <br>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+
+</div>
+
+</body>
+</html>
