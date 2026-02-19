@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Georgia;
+    background: #f6d8a6;
+}
+
+.header {
+    background: #6f4a3a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.left, .right {
+    width: 40%;
+}
+
+button {
+    padding: 10px 20px;
+    background: #6f4a3a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input, select {
+    padding: 8px;
+    width: 80%;
+}
