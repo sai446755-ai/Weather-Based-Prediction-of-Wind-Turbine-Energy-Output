@@ -11,15 +11,32 @@ This project predicts wind turbine electricity output using weather data like wi
 | Member 3     | Muga Madhu Sudhab Reddy                |
 ## [Project Demo Video Link]
 https://drive.google.com/file/d/1lXSQSqCvf5I508mBv-A7kPK-on-3uO5a/view?usp=drive_link
-## Technologies Used
-| Category        | Technology            |
-|-----------------|-----------------------|
-| Programming     | Python                |
-| Image Handling  | OpenCV, NumPy         |
-| Web Framework   | Flask                 |
-| Interface       | HTML, CSS             |
-| Platform        | Jupyter Notebook      |
-| Repository      | GitHub                |
+##🔧 Technologies Used
+1️⃣ Programming Language
+
+Python
+
+2️⃣ Development Tools
+
+Anaconda Navigator
+
+Jupyter Notebook
+
+Spyder IDE
+
+3️⃣ Machine Learning Libraries
+
+Scikit-learn (Sklearn) – for building ML models
+
+NumPy – for numerical calculations
+
+Pandas – for data processing & analysis
+
+Matplotlib – for data visualization
+
+4️⃣ Web Framework
+
+Flask – for building the web application interface
 
 ## Project Setup
 
