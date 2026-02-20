@@ -25,23 +25,100 @@ https://drive.google.com/file/d/1lXSQSqCvf5I508mBv-A7kPK-on-3uO5a/view?usp=drive
 
 # 1. Clone the Repository- 
 git clone https://github.com/sai446755-ai/Weather-Based-Prediction-of-Wind-Turbine-Energy-Output/tree/main/Wind%20Energy%20Prediction
-# 2. Create & Activate Virtual Environment
-python -m venv .venv
-# Linux / Mac
-source .venv/bin/activate
-# Windows
-.venv\Scripts\activate
-# 3.Install Dependencies
+
+# 2.Install Dependencies
 <pip install -r requirements.txt>
 If requirements file is missing:
 <pip install tensorflow keras numpy pandas matplotlib opencv-python flask>
 
-# 4.Download Dataset
+# 3.Download Dataset
 Link:  <https://www.kaggle.com/datasets/paultimothymooney/blood-cells/data>
 
-# 5.Future Improvements
-Future improvements using AI/ML include applying advanced deep learning models like LSTM or Transformers to improve prediction accuracy.The system can be enhanced with real-time IoT data for live forecasting. Reinforcement learning can optimize turbine performance automatically. AI-based fault detection can also reduce maintenance costs and downtime.
+# 4.Future Improvements
+1️⃣ Advanced Deep Learning Models
 
-# 6.License
+Use Transformer models (better than LSTM for long sequences)
+
+Attention-based LSTM
+
+CNN-LSTM hybrid models
+
+👉 Improves long-term and complex pattern prediction accuracy
+
+2️⃣ Reinforcement Learning (RL)
+
+Optimize turbine blade angle automatically
+
+Adjust rotation speed based on wind conditions
+
+👉 Maximizes energy output dynamically
+
+3️⃣ Ensemble Learning
+
+Combine multiple models (LSTM + XGBoost + Random Forest)
+
+Use model averaging or stacking
+
+👉 Reduces prediction error and improves stability
+
+4️⃣ Anomaly Detection with AI
+
+Detect unusual wind patterns
+
+Identify turbine faults early
+
+Predict maintenance needs
+
+👉 Reduces downtime and maintenance cost
+
+5️⃣ Real-Time Prediction with Edge AI
+
+Deploy lightweight ML models near turbines
+
+Make fast local decisions without cloud delay
+
+👉 Useful for smart wind farms
+
+6️⃣ Transfer Learning
+
+Train model on one wind farm
+
+Adapt it to another location with small data
+
+👉 Saves training time and improves scalability
+
+7️⃣ AutoML Integration
+
+Automatically select best model
+
+Tune hyperparameters automatically
+
+👉 Saves development time
+
+8️⃣ Hybrid Renewable AI System
+
+Combine wind + solar prediction
+
+Use AI to decide which energy source to prioritize
+
+👉 Builds complete renewable energy management system
+
+9️⃣ Explainable AI (XAI)
+
+Use SHAP / LIME methods
+
+Explain which weather feature affects power most
+
+👉 Makes system trustworthy for industries
+
+🔟 Cloud-Based AI Deployment
+
+Deploy model using AWS / Azure ML
+
+Continuous learning with new weather data
+
+👉 Creates scalable AI solution
+
+# 5.License
 This project is developed for *educational and research purposes*.
 
