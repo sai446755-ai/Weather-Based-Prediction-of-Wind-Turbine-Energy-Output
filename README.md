@@ -15,7 +15,7 @@ https://drive.google.com/file/d/1lXSQSqCvf5I508mBv-A7kPK-on-3uO5a/view?usp=drive
 | Category        | Technology            |
 |-----------------|-----------------------|
 | Programming     | Python                |
-| Image Handling  | OpenCV, NumPy         |
+| Image Handling  | OpenCV, NumPy         
 | Web Framework   | Flask                 |
 | Interface       | HTML, CSS             |
 | Platform        | Jupyter Notebook      |
